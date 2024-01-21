@@ -7,7 +7,7 @@ def main():
         number = int(number)
     except ValueError:
         print("Ви ввели не ціле число.")
-        return
+        return main()
 
     # Ділимо число на 1000, щоб отримати першу цифру
     перше_число = number // 1000
